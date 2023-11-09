@@ -8,6 +8,7 @@
     padding: 0%;
     text-decoration: none;
     box-sizing: border-box;
+    list-style: none;
  } 
 
 
@@ -258,10 +259,8 @@ p::selection{
      margin: 1%;
      height: auto;
      width: 100%; 
-     grid-template-areas: "servicos1 servicos1 servicios2 servicios2"
-                          "servivios1 servicios1 servicios2 servicios2"
-                          "eldorado1 eldorado1 eldorado1 eldorado1"
-                          "sumapa1 sumampa1 sumampa1 sumampa1"
+     grid-template-areas: "servicos1 servicios2 eldorado1"
+                         
 
 }
 
@@ -275,8 +274,10 @@ p::selection{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: auto;
     grid-area: "servicios1";
+   
     
 }
+
 .servicios, .servicios2 {
     margin: 5%;
     height: 100%;
