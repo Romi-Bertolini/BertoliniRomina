@@ -9,7 +9,7 @@
     text-decoration: none;
     box-sizing: border-box;
     list-style: none;
-    background-color: rgb(140, 249, 135), 222, 156);
+    text-decoration-line: none;
  } 
 
 
@@ -290,6 +290,7 @@ p::selection{
     grid-area: "servicios2";
     
 }
+
 .nav {
      background-color: #199712;
      margin: 0%;
@@ -318,7 +319,7 @@ p::selection{
     gap: 1rem;
     margin: 1%;
     height: auto;
-    width: 100%; 
+    width: 80%; 
 }
 
 .eventofotos, .salon {
@@ -346,31 +347,34 @@ p::selection{
     width: 95%;
 
 }
-.formu {
+.carousel {
+    margin: 8%;
 
 }
 
+/*Media aplicada a Inicio y Productos*/
+
 @media (min-width:851px) and (max-width: 1100px){
  .lista1 { 
-    width: 65%;
+    width: 50%;
     margin: 1%;
-
+    font-size: small;
+    
  }
- .productos{
-    grid-template-columns: repeat(2, 2fr);
- }
+ 
  .iniciofotos, .canchainicio1 {
     margin: 5%;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
  }
- .eventofotos {
-    margin: 10%;
+ .productos{
+    grid-template-columns: repeat(2, 2fr);
  }
+
 }
 
 
-@media (min-width:500px) and (max-width: 850px){
+@media (min-width:450px) and (max-width: 850px){
     .lista1 { 
         width: 100%;
         margin: 1%;
@@ -382,70 +386,26 @@ p::selection{
      }
     .p, .Bienvenidos, {
          margin: 20%;
-         padding: 10%;
+         padding: 5%;
      
     }
     .iniciofotos, .canchainicio1 {
          margin: 10%;
-         display: flex;
-         flex-direction: column;
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         grid-template-rows: repeat(2, 1fr);
+         width: 85%;
          justify-content: center;
-         width: 100%;
+         
     }
       
     .productos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        font-size: small;
     }
-    .eventofotos {
-     margin: 10%;
-     display: grid;
-     grid-template-columns: repeat(1, 1fr);
-     
-    }
-    .header, .servicios3 {
-        margin: 20%;
-    }
+    
+
 }
 
-@media (min-width:300px) and (max-width: 499px){
-    .lista1 { 
-        width: 100%;
-        margin: 1%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
     
-    }
-     
-    .p, .Bienvenidos, {
-         margin: 20%;
-         padding: 10%;
-      
-    }
-
-    .iniciofotos, .canchainicio1 {
-        margin: 30%;
-        display: grid;
-        grid-row: (1, 1fr);
-        width: 100%;
-        overflow-x: scroll;
-        
-   }
-    .productos{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .eventofotos {
-     margin: 10%;
-     display: grid;
-     grid-template-columns: repeat(1, 1fr);
-     
-    }
-    .header, .servicios3 {
-        margin: 20%;
-    }
-
-
-    }
