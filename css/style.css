@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
@@ -54,6 +55,13 @@
   padding: 1%;
   height: 5%;
   align-items: center;
+}
+.nav .lista1:hover {
+  background-color: #69eb63;
+  border-radius: 10px;
+}
+.nav .lista1:before {
+  content: "⚽";
 }
 .nav .lista2 {
   color: rgb(5, 87, 8);

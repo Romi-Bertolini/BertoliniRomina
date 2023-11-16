@@ -60,6 +60,14 @@
         padding: 1%;
         height: 5%;
         align-items: center;
+
+        &:hover{
+            background-color: #69eb63;
+            border-radius: 10px;
+        }
+        &:before{
+            content: "⚽";
+        }
     }
     .lista2 {
         color: rgb(5, 87, 8);
@@ -86,7 +94,7 @@
 }
 }
  .h2 {
-    
+
  }
 
 
