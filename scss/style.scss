@@ -23,12 +23,7 @@
     width: 70%;
 }
 
-.logo {
-      margin: 0%;
-      padding: 0%;
-      display: inline-block;
-      height: auto;
-    }
+
    
 .h1 {
       color: green;
@@ -51,9 +46,19 @@
             border: 1px solid;
             border-radius: 5px;
             height: 5px;
+
+            .logo {
+                margin: 0%;
+                padding: 0%;
+                display: inline-block;
+                height: auto;
+              }
         }
     }
 .nav {
+    background-color: #199712;
+    margin: 0%;
+
     .lista1 {
         color: #156419;
         margin: 3%;
@@ -91,15 +96,99 @@
         justify-content: center;
         border: none;
         font-weight: 600;
+
+        &:hover {
+            background-color: #69eb63;
+            border-radius: 10px;
+            
+        }
 }
 }
  .h2 {
-
+    color: rgb(36, 167, 44);
+    margin: 2%;
+    padding: 1%;
+    height: 0%;
+    font-size: 200%;
+    text-align: center;
  }
 
+ .iniciofotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 1rem;
+    margin: 1%;
+    height: auto;
+    width: 100%; 
 
+    .canchainicio1 {
+        margin: 1%;
+        height: 150%;
+        padding: 1%;
+        width: 95%;
+    
+    }
+}
 
+.productos {
+     margin: 3%;
+     height: 5%;
+     padding: 3%;
+     color: darkgreen;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     display: flex;
+     text-align: center;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(3, 2fr);
+     grid-template-rows: repeat(3, 300px);
+     gap: 1rem; 
 
+     .pro {
+        font-weight: 200px;
+        height: 35px;
+        width: 25%;
+        background-color: #5cc257;
+        margin: 15%;
+        border: 1px solid;
+        border-radius: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        column-gap: 15px;
+        opacity: 150;
+        &.pro:hover .profoto {
+            opacity: 10;
+         }
+    }
+    .profoto {
+        margin: 5%;
+        height: 600%;
+        padding: 10%;
+        width: 200%; 
+
+    }
+    .boton {
+        background-color: transparent;
+        width: 100%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 5px;
+       
+    }
+    .comprar {
+        background-color: #5cc257;
+        color: antiquewhite;
+    
+    }
+}
 
 
 

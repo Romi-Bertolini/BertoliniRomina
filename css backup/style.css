@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2? family= Lato:ital,wght@1,300 & display=swap');
 
 
-* {
+/** {
     margin: 0%;
     padding: 0%;
     text-decoration: none;
@@ -113,7 +113,7 @@ h2 {
     background-color: #69eb63;
     border-radius: 10px;
     
-}
+}*/
 .productos {
      margin: 3%;
      height: 5%;
@@ -290,26 +290,26 @@ p::selection{
     grid-area: "servicios2";
     
 }
-.nav {
+/*.nav {
      background-color: #199712;
      margin: 0%;
 }
-
+*/
 
 .titulo {
       background-color: #5cc257;
       width: 100%;
 }
-.body {
+/*.body {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.centar, .logo {
+.inicio, .logo {
      margin: 0%;
      height: 20vh;
      text-align: right;
       
-}
+}*/
 
 .eventofotos {
     display: grid;
@@ -328,7 +328,7 @@ p::selection{
     width: 100%;
 }
 
-.iniciofotos {
+/*.iniciofotos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 300px);
@@ -345,14 +345,14 @@ p::selection{
     padding: 1%;
     width: 95%;
 
-}
+}*/
 .formu {
 
 }
 
 /*Media aplicada a Inicio y Productos*/
 
-@media (min-width:851px) and (max-width: 1100px){
+/*@media (min-width:851px) and (max-width: 1100px){
     .lista1 { 
        width: 65%;
        width: 50%;
@@ -435,6 +435,6 @@ p::selection{
            margin: 20%;
        }
    
-   }
+   }*/
    
-       }
+       

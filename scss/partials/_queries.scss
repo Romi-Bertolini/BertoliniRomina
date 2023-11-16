@@ -1,3 +1,4 @@
+
 @media (min-width:851px) and (max-width: 1100px){
     .lista1 { 
        width: 65%;
@@ -22,52 +23,65 @@
    }
 }
    
-@media (min-width:450px) and (max-width: 850px){
-    .lista1 { 
-        width: 100%;
-        margin: 1%;
-
-     }
-    .p { 
-        .Bienvenidos, {
+   
+   @media (min-width:450px) and (max-width: 850px){
+       .lista1 { 
+           width: 100%;
+           margin: 1%;
+   
+        }
+       .p, .Bienvenidos, {
             margin: 20%;
             padding: 10%;
             padding: 5%;
        }
-    } 
-    .productos{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        font-size: small;
-    }
-    
-}
-
-@media (min-width:300px) and (max-width: 499px){
-    .lista1 { 
-        width: 100%;
-        margin: 1%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-
-    }
-
-    .p{ 
-        .Bienvenidos, {
+       .productos{
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           font-size: small;
+       }
+       
+   }
+   
+   @media (min-width:300px) and (max-width: 499px){
+       .lista1 { 
+           width: 100%;
+           margin: 1%;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           position: relative;
+   
+       }
+   
+       .p, .Bienvenidos, {
             margin: 20%;
             padding: 10%;
    
        }
-    }
-    
-    .productos{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
    
-
-}
-
-    
+       .iniciofotos, .canchainicio1 {
+           margin: 30%;
+           display: grid;
+           grid-row: (1, 1fr);
+           width: 100%;
+           overflow-x: scroll;
+   
+      }
+       .productos{
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+       }
+       .eventofotos {
+        margin: 10%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+   
+       }
+       .header, .servicios3 {
+           margin: 20%;
+       }
+   
+   }
+   
+       
