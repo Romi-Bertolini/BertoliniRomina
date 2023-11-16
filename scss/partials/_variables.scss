@@ -1,0 +1,16 @@
+
+
+$fuente: Verdana, Geneva, Tahoma, sans-serif;
+$ancho: 100%;
+$alto: 100%;
+$tamano: 1rem;
+$color-fondo:  #69eb63;
+$color-titulos:  #15850f;
+$color: (
+    color-fondo:  #69eb63,
+    color-titulos:  #15850f
+);
+@mixin sizes ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}

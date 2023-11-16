@@ -2,45 +2,38 @@
 
 @import "./partials/reset";
 
-* {
-    margin: 0%;
-    padding: 0%;
-    text-decoration: none;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration-line: none;
- } 
+
 
 .body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-
+    font-family: $fuente;
 }
 
 .header {
-    margin: 2%;
+    margin: 25%;
     padding: auto;
     height: 2%;
-    width: 70%;
+    width: $ancho *0.7;
+    background-color:  map-get($map: $color, $key: color-fondo);
 }
 
 
    
 .h1 {
-      color: green;
+      color:  map-get($map: $color, $key: color-titulos);
       margin: 1%;
       padding: 0%;
       font-size: 250%;
       text-align: center;
-      width: 100%;
-      background-color: transparent;
-      width: 100%;
+      width: $ancho;
+      background-color:  map-get($map: $color, $key: color-fondo);
       height: 100px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: none;
+      border: none; 
+    
 
-        .inicio {
+           .inicio {
             margin: 2px;
             padding: 1px;   
             border: 1px solid;
@@ -56,26 +49,30 @@
         }
     }
 .nav {
-    background-color: #199712;
-    margin: 0%;
-
-    .lista1 {
-        color: #156419;
+    .navegacion {
+    background-color:  map-get($map: $color, $key: color-fondo);
+    margin: 5%;
+}
+}
+.lista1 {
+        color: #010f01;
         margin: 3%;
         padding: 1%;
         height: 5%;
         align-items: center;
-
-        &:hover{
-            background-color: #69eb63;
+        text-decoration: none;
+        font-weight: 600;
+   
+    &:hover{
+            background-color: map-get($map: $color, $key: color-fondo);
             border-radius: 10px;
         }
-        &:before{
+    &:before{
             content: "⚽";
         }
     }
-    .lista2 {
-        color: rgb(5, 87, 8);
+.lista2 {
+        color:  map-get($map: $color, $key: color-titulos);
         margin: 0%;
         padding: 0%;
         height: auto;
@@ -83,13 +80,13 @@
         
    }
    
-     .lista3 { 
-        color: #1cb114;
+.lista3 { 
+        color:  map-get($map: $color, $key: color-titulos);
         margin: 1%;
         padding: 0%;
         text-align: center;
         background-color: transparent;
-        width: 100%;
+        width: $ancho;
         height: 15px;
         display: flex;
         align-items: center;
@@ -98,19 +95,31 @@
         font-weight: 600;
 
         &:hover {
-            background-color: #69eb63;
+            background-color:  map-get($map: $color, $key: color-fondo);
             border-radius: 10px;
             
         }
 }
-}
+
  .h2 {
-    color: rgb(36, 167, 44);
+    color:  map-get($map: $color, $key: color-titulos);
     margin: 2%;
     padding: 1%;
     height: 0%;
     font-size: 200%;
     text-align: center;
+    width: $ancho;
+
+    .salon { 
+        margin: 5%;
+        padding: 1%;
+        height: $alto;
+        width: $ancho;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
  }
 
  .iniciofotos {
@@ -135,13 +144,12 @@
      margin: 3%;
      height: 5%;
      padding: 3%;
-     color: darkgreen;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: $color-titulos;
      display: flex;
      text-align: center;
      flex-direction: column;
      flex-wrap: nowrap;
-     width: 100%;
+     width: $ancho;
      display: grid;
      grid-template-columns: repeat(3, 2fr);
      grid-template-rows: repeat(3, 300px);
@@ -151,30 +159,29 @@
         font-weight: 200px;
         height: 35px;
         width: 25%;
-        background-color: #5cc257;
+        background-color: $color-fondo;
         margin: 15%;
         border: 1px solid;
         border-radius: 5px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
         align-items: center;
         justify-content: space-around;
         column-gap: 15px;
         opacity: 150;
-        &.pro:hover .profoto {
-            opacity: 10;
-         }
+        font-weight: 600;
+
+       
     }
     .profoto {
         margin: 5%;
-        height: 600%;
+        height: $alto *6;
         padding: 10%;
-        width: 200%; 
+        width: $ancho *2; 
 
     }
     .boton {
         background-color: transparent;
-        width: 100%;
+        width: $ancho;
         height: 35px;
         display: flex;
         align-items: center;
@@ -182,21 +189,116 @@
         border: none;
         border-radius: 5px;
        
-    }
-    .comprar {
-        background-color: #5cc257;
-        color: antiquewhite;
+        }
+        .comprar {
+            background-color: $color-fondo;
+            color: antiquewhite;
+            
+            &:hover {
+                opacity: 20;
+                background-color: $color-titulos;
+             }
+            }
+
+    } 
+    
+    p {
+        margin: 1%;
+        height: 1px;
+        padding: 0%;
+        font-size: medium;
+        display: inline-flex;
+        font-size: medium;
+
+        &::selection{
+            background-color: #69eb63;
+        }
+       
     
     }
+   
+.servicios {
+     display: grid;
+     grid-template-columns: repeat(3, 2fr);
+     grid-template-rows: repeat(3, 300px);
+     gap: 1rem; 
+     margin: 1%;
+     height: auto;
+     width: $ancho; 
+     
+     .servicios1 {
+        margin: 5%;
+        @include sizes (100%, 100%);
+        padding: auto;
+        text-align: center;
+        font-size: medium;
+        grid-area: "servicios1";
+     }
+     .servicios2 {
+        margin: 5%;
+        @include sizes (100%, 100%);
+        padding: auto;
+        text-align: center;
+        font-size: medium;
+        grid-area: "servicios2";
+        
+    }
+
+}
+
+.canchasumampa { 
+  .sumampa1 {
+    margin: 5%;
+    height: 1%;
+    padding: 1%;
+    display: grid;
+    block-size: 500px;
+    justify-content: center;
+    width: $ancho;
+    grid-area: "sumampa1";
+
+}
+}
+
+.canchaeldorado { 
+  .eldorado1 {
+   margin: 5%;
+   height: 1%;
+   padding: 1%;
+   display: grid;
+   block-size: 500px;
+   justify-content: center;
+   width: $ancho;
+   grid-area: "eldorado1";
+}
+}
+
+.contacto {
+    margin: 1%;
+    height: 1%;
+    padding: auto;
+    text-align: center;
+}
+.formulario {
+    margin: 3%;
+    padding: 2%;
+    height: 2%;
+    background-color: $color-fondo;
+    border-radius: 5%;
+
+    input:valid, .formu textarea:valid{
+        background-color: $color-fondo;
+    }
+         
 }
 
 
-
-
-
-
-
-
+.carousel {
+    margin: 5%;
+    height: 500px;
+    width: $ancho *0.85;  
+    
+}
 
 
 

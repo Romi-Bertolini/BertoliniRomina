@@ -114,7 +114,7 @@ h2 {
     border-radius: 10px;
     
 }*/
-.productos {
+/*.productos {
      margin: 3%;
      height: 5%;
      padding: 3%;
@@ -153,8 +153,8 @@ h2 {
     height: 600%;
     padding: 10%;
     width: 200%; 
-}
- .pro:hover .profoto {
+}*/
+/* .pro:hover .profoto {
     opacity: 10;
  }
 
@@ -176,9 +176,9 @@ h2 {
 
 .comprar:hover{
     background-color: #199712;
-}
+}*/
 
-.h2, .salon { 
+/*.h2, .salon { 
     margin: 5%;
     padding: 1%;
     height: auto;
@@ -189,7 +189,7 @@ h2 {
     
 }
 
-.formulario {
+/*.formulario {
     margin: 3%;
     padding: 2%;
     height: 2%;
@@ -210,11 +210,11 @@ h2 {
      padding: auto;
      text-align: center;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+}*/
 
 
 
-p {
+/*p {
     margin: 1%;
     height: 1px;
     padding: 0%;
@@ -227,9 +227,9 @@ p {
 }
 p::selection{
     background-color: #69eb63;
-}
+}*/
 
-.canchasumampa, .sumampa1 {
+/*.canchasumampa, .sumampa1 {
      margin: 5%;
      height: 1%;
      padding: 1%;
@@ -250,9 +250,9 @@ p::selection{
     justify-content: center;
     width: 100%;
     grid-area: "eldorado1";
-}
+}*/
 
-.servicios {
+/*.servicios {
      display: grid;
      grid-template-columns: repeat(3, 2fr);
      grid-template-rows: repeat(3, 300px);
@@ -311,7 +311,7 @@ p::selection{
       
 }*/
 
-.eventofotos {
+/*.eventofotos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 300px);
@@ -346,9 +346,7 @@ p::selection{
     width: 95%;
 
 }*/
-.formu {
 
-}
 
 /*Media aplicada a Inicio y Productos*/
 
