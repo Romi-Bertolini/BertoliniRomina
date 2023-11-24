@@ -12,41 +12,54 @@
 </head>
 
 <body>
+  <div class="cuerpo">
   <header id="tpo" class="titulo">
-    <!--logo de fut bar-->
-
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-    <h1 class="inicio">BIENVENIDOS A FUT BAR<a href="/index.html"> 
-      <a class="inicio" href="/index.html">
-        <img class="logo" src="../img/logo.png" alt="Logo de Fut Bar">
-     </a></h1>
+   
+ <!--logo de fut bar--> 
+ <nav class="container">
+  <div class="cont">
+  <div class="row">
+     <div class="col-lg-7 col-md-9 col-sm-12"> <h1 class="inicio">BIENVENIDOS A FUT BAR<a href="/index.html"> </a></h1> </div>
+      <div class="col-lg-3 col-md-3 col-sm-12"> <a class="inicio" href="../index.html"><img class="logo" src="../img/logo.png" alt="Logo de Fut Bar"></a> </div>
+    </div>
 
   <!--menu de navegacion-->
 
     <nav>
+      <div class="nave">
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+          <span id="menu-abrir">&#9776</span>
+          <span id="menu-cerrar">x</span>
+        </label>
+        <nav>
         <a class="lista1" href="../index.html">Inicio</a>
         <a class="lista1" href="contacto.html">Contacto</a>
         <a class="lista1" href="eventos.html">Eventos</a>
-        <a class="lista1" href="futbar-sumampa.html">Fut Bar Sumampa</a>
-        <a class="lista1" href="futbar-eldorado.html">Fut Bar Eldorado</a>
-        <a class="lista1" href="productos.html">Productos</a>
+        <a class="lista1" href="futbar-sumampa.html">Sumampa</a>
+        <a class="lista1" href="futbar-eldorado.html">Eldorado</a>
+        <a class="lista1" href="productos.html">Productos</a></nav>
+      </div>
+    </div>
      </nav>
   </header>
-     
-    <h2>Salon de eventos</h2>
+  <div id="textobienvenida">
+    <h2 class="paginas">Salon de eventos</h2>
 
      <p class="servivios3">Contamos con un servicio completo para la realización de cumpleaños infantiles de Fútbol.
 
       Ofrecemos un ambiente seguro en donde encontrarás un quincho totalmente vidriado desde donde podrás observar a los chicos jugar. Disponés de parrilla a gas, horno pizzero, heladera, vajilla completa y TV.
       
       Te brindamos también servicio de profesores y animadores. </p>
+    </div>
 
-      <br>
+    
        
             <!--carrusel-->
 
  <div class="row">
    <div class="col">
+    <div class="carrusel">
     <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -79,6 +92,7 @@
     </div>
   </div>
   </div>
+  </div>
   </body>
  
 
@@ -87,6 +101,6 @@
   <script src="../js/popper.js"></script>
   <script src="../js/bootstrap.js"></script>
  
-
+</div>
 </body>
 </html>

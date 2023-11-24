@@ -12,47 +12,113 @@
     <title>Productos</title>
 </head>
 <body>
+  <div class="cuerpo">
  <header id="top" class="titulo">
 
-   
-     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-   
-   <h1 class="inicio">BIENVENIDOS A FUT BAR<a href="/index.html"> 
-     <a class="inicio" href="/index.html">
-        <img class="logo" src="../img/logo.png" alt="Logo de Fut Bar">
-     </a></h1>
+    <!--logo de fut bar--> 
+<nav class="container">
+  <div class="cont">
+  <div class="row">
+     <div class="col-lg-7 col-md-9 col-sm-12"> <h1 class="inicio">BIENVENIDOS A FUT BAR<a href="/index.html"> </a></h1> </div>
+      <div class="col-lg-3 col-md-3 col-sm-12"> <a class="inicio" href="../index.html"><img class="logo" src="../img/logo.png" alt="Logo de Fut Bar"></a> </div>
+    </div>
    
 <!--menu de navegacion-->
      <nav>
+      <div class="nave">
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+          <span id="menu-abrir">&#9776</span>
+          <span id="menu-cerrar">x</span>
+        </label>
+        <nav>
         <a class="lista1" href="../index.html">Inicio</a>
         <a class="lista1" href="contacto.html">Contacto</a>
         <a class="lista1" href="eventos.html">Eventos</a>
-        <a class="lista1" href="futbar-sumampa.html">Fut Bar Sumampa</a>
-        <a class="lista1" href="futbar-eldorado.html">Fut Bar Eldorado</a>
+        <a class="lista1" href="futbar-sumampa.html">Sumampa</a>
+        <a class="lista1" href="futbar-eldorado.html">Eldorado</a>
         <a class="lista1" href="productos.html">Productos</a>
+      </nav>
+      </div>
+    </div>
      </nav>
    </header>
-     <h2>Productos</h2>
-      <div>
-       <section class="productos">
-          <div class="pro">Cesped <img class="profoto" src="../img/cesped 1.jpg" alt="cesped">
-          <a href="#" class="boton comprar">Comprar</a></div>
-          <div class="pro">Pelotas <img class="profoto" src="../img/pelota.jpg" alt="pelotas">
-          <a href="#" class="boton comprar">Comprar</a></div>
-          <div class="pro">Redes <img class="profoto" src="../img/cancha.jpg" alt="cancha de futbol con redes y luminarias">
-          <a href="#" class="boton comprar">Comprar</a></div>
-          <div class="pro">Caucho <img class="profoto" src="../img/caucho.webp" alt="caucho sintetico">
-          <a href="#" class="boton comprar">Comprar</a></div>
-          <div class="pro">Luces <img class="profoto" src="../img/luminarias.webp" alt="luminarias">
-          <a href="#" class="boton comprar">Comprar</a></div>
-          <div class="pro">Arena <img class="profoto" src="../img/arena.jpg" alt="arena">
-          <a href="#" class="boton comprar">Comprar</a></div>
-        </section>
+
+   <!--productos disponibles-->
+   
+   <div id="textobienvenida">
+     <h2 class="paginas">Productos</h2>
+      
+      <div class="card-group">
+        <div class="card">
+          <img src="../img/CESPED.jpg" class="card-img-tope" alt="card-group-image">
+          <div class="card-body">
+            <h5 class="card-title">Cesped</h5>
+            
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Comprar</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../img/PELOTA...jpg" class="card-img-tope" alt="card-group-image">
+          <div class="card-body">
+            <h5 class="card-title">Pelotas</h5>
+            
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Comprar</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../img/CANCHA..jpg" class="card-img-tope" alt="card-group-image">
+          <div class="card-body">
+            <h5 class="card-title">Redes</h5>
+            
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Comprar</small>
+          </div>
+          
+            </div>
+            <div class="card">
+              <img src="../img/CAUCHO..jpg" class="card-img-tope" alt="card-group-image">
+              <div class="card-body">
+                <h5 class="card-title">Caucho</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Comprar</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../img/ARENAA....jpg" class="card-img-tope" alt="card-group-image">
+              <div class="card-body">
+                <h5 class="card-title">Arena</h5>
+               
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Compar</small>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="../img/luminarias.webp" class="card-img-tope" alt="card-group-image">
+              <div class="card-body">
+                <h5 class="card-title">Luminaria</h5>
+               
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Compar</small>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  
+
+      
  <a href="#top">Arriba</a>
  <script src="../js/popper.js"></script>
  <script src="../js/bootstrap.js"></script>
- 
+</div>
 </body>
 </html>

@@ -3,90 +3,152 @@
 @import "./partials/reset";
 
 
-
-.body {
-    font-family: $fuente;
+.cuerpo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(151, 238, 140);
 }
 
 .header {
-    margin: 25%;
-    padding: auto;
-    height: 2%;
-    width: $ancho *0.7;
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    width: $ancho;
     background-color:  map-get($map: $color, $key: color-fondo);
+    display: flexbox;
 }
 
-
-   
-.h1 {
-      color:  map-get($map: $color, $key: color-titulos);
-      margin: 1%;
-      padding: 0%;
-      font-size: 250%;
-      text-align: center;
-      width: $ancho;
-      background-color:  map-get($map: $color, $key: color-fondo);
-      height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: none; 
+.container {
+    display: flexbox;
+    color:  map-get($map: $color, $key: color-titulos);
+    margin: 0%;
+    padding: 0%;
+    font-size: 300%;
+    width: $ancho;
+    height: 10%;
+    border: none; 
+    text-align: center;
     
+    .cont {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
 
-           .inicio {
-            margin: 2px;
-            padding: 1px;   
-            border: 1px solid;
-            border-radius: 5px;
-            height: 5px;
-
-            .logo {
+        .row {
+            .inicio {
+                margin: 10%;
+                padding: 0%;   
+                height: 10%;
+                text-align: center;
+                width: $ancho;
+                display: flexbox;
+            }
+            .logo{ 
+               margin: 5%;
+               padding: 0%;
+               grid-row: auto;
+               height: 150px;
+               width: auto;
+               display: flexbox;
+                  }
+              } 
+              .nave {
+                width: $ancho;
+                height: $alto;
+                display: flexbox;
                 margin: 0%;
                 padding: 0%;
-                display: inline-block;
-                height: auto;
-              }
-        }
+               
+                .lista1 {
+                    color: $color-titulos;
+                    margin: 0%;
+                    padding: 0%;
+                    height: auto;
+                    text-decoration: none;
+                    font-size: large;
+                    display: flexbox;
+                    text-align: center;
+                   
+                &:hover{
+                        background-color: map-get($map: $color, $key: color-fondo);
+                        border-radius: 10px;
+                    }
+                &:before{
+                        content: "⚽";
+                    }
+                }
+            }   
     }
-.nav {
-    .navegacion {
-    background-color:  map-get($map: $color, $key: color-fondo);
-    margin: 5%;
-}
-}
-.lista1 {
-        color: #010f01;
-        margin: 3%;
-        padding: 1%;
-        height: 5%;
-        align-items: center;
-        text-decoration: none;
-        font-weight: 600;
    
-    &:hover{
-            background-color: map-get($map: $color, $key: color-fondo);
-            border-radius: 10px;
-        }
-    &:before{
-            content: "⚽";
-        }
-    }
+}
+
+
 .lista2 {
         color:  map-get($map: $color, $key: color-titulos);
         margin: 0%;
         padding: 0%;
         height: auto;
         text-align: center;
+        display: flexbox;
         
    }
    
-.lista3 { 
+
+
+#textobienvenida {
+    width: $ancho;
+    height: $alto;
+    display: flexbox;
+    margin: 0%;
+    padding: 0%;
+
+  .card-body {
+        background-color:  rgb(151, 238, 140);
+        position: relative;
+
+        .card-title {
+            background-color:rgb(151, 238, 140);
+        }
+    }
+    .tarjetas {
+        margin: 15%;
+        overflow: auto;
+    }
+
+    .paginas {
+        color:  map-get($map: $color, $key: color-titulos);
+        margin: 5%;
+        padding: 0%;
+        height: 0%;
+        font-size: 500px;
+        text-align: center;
+        width: $ancho;
+        display: flexbox;
+    } 
+    
+    .bienvenidos {
+        margin: 0%;
+        height: auto;
+        padding: 0%;
+        display: flexbox;
+        width: 90%;
+        text-align: center;
+        font-size: larger;
+    }
+    
+     .iniciofotos {
+         width: 80%;
+         margin: 10%;
+         
+        
+ }
+   
+    .lista3 { 
         color:  map-get($map: $color, $key: color-titulos);
         margin: 1%;
         padding: 0%;
         text-align: center;
         background-color: transparent;
-        width: $ancho;
+        width: 100%;
         height: 15px;
         display: flex;
         align-items: center;
@@ -95,114 +157,42 @@
         font-weight: 600;
 
         &:hover {
-            background-color:  map-get($map: $color, $key: color-fondo);
+            background-color: #69eb63;
             border-radius: 10px;
             
         }
-}
-
- .h2 {
-    color:  map-get($map: $color, $key: color-titulos);
-    margin: 2%;
-    padding: 1%;
-    height: 0%;
-    font-size: 200%;
-    text-align: center;
-    width: $ancho;
-
-    .salon { 
-        margin: 5%;
-        padding: 1%;
-        height: $alto;
-        width: $ancho;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
     }
- }
-
- .iniciofotos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 300px);
-    gap: 1rem;
-    margin: 1%;
-    height: auto;
-    width: 100%; 
-
-    .canchainicio1 {
+ 
+    .servicios {
+        display: grid;
+        grid-template-areas:
+        "servicios1 servicios2 eldorado1";
+        grid-template-columns: 30% 30% 40%;
         margin: 1%;
-        height: 150%;
-        padding: 1%;
-        width: 95%;
+        height: auto;
+        width: $ancho; 
+        
+           
+       }
+       .servicios3 {
+           display: grid;
+           margin-bottom: 1%;
+           width: 100%;
+           height: auto;
+           padding: 0%;
+       }
+       
+      }
+   
     
-    }
-}
-
-.productos {
-     margin: 3%;
-     height: 5%;
-     padding: 3%;
-     color: $color-titulos;
-     display: flex;
-     text-align: center;
-     flex-direction: column;
-     flex-wrap: nowrap;
-     width: $ancho;
-     display: grid;
-     grid-template-columns: repeat(3, 2fr);
-     grid-template-rows: repeat(3, 300px);
-     gap: 1rem; 
-
-     .pro {
-        font-weight: 200px;
-        height: 35px;
-        width: 25%;
-        background-color: $color-fondo;
-        margin: 15%;
-        border: 1px solid;
-        border-radius: 5px;
-        text-align: center;
-        align-items: center;
-        justify-content: space-around;
-        column-gap: 15px;
-        opacity: 150;
-        font-weight: 600;
-
+    .card-group{
+        .card {
        
-    }
-    .profoto {
-        margin: 5%;
-        height: $alto *6;
-        padding: 10%;
-        width: $ancho *2; 
-
-    }
-    .boton {
-        background-color: transparent;
-        width: $ancho;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: none;
-        border-radius: 5px;
-       
+           
+    
         }
-        .comprar {
-            background-color: $color-fondo;
-            color: antiquewhite;
-            
-            &:hover {
-                opacity: 20;
-                background-color: $color-titulos;
-             }
-            }
-
     } 
-    
-    p {
+     p {
         margin: 1%;
         height: 1px;
         padding: 0%;
@@ -211,73 +201,21 @@
         font-size: medium;
 
         &::selection{
-            background-color: #69eb63;
+            background-color: $color-fondo;
         }
        
     
     }
    
-.servicios {
-     display: grid;
-     grid-template-columns: repeat(3, 2fr);
-     grid-template-rows: repeat(3, 300px);
-     gap: 1rem; 
-     margin: 1%;
-     height: auto;
-     width: $ancho; 
-     
-     .servicios1 {
-        margin: 5%;
-        @include sizes (100%, 100%);
-        padding: auto;
-        text-align: center;
-        font-size: medium;
-        grid-area: "servicios1";
-     }
-     .servicios2 {
-        margin: 5%;
-        @include sizes (100%, 100%);
-        padding: auto;
-        text-align: center;
-        font-size: medium;
-        grid-area: "servicios2";
-        
-    }
 
-}
 
-.canchasumampa { 
-  .sumampa1 {
-    margin: 5%;
-    height: 1%;
-    padding: 1%;
-    display: grid;
-    block-size: 500px;
-    justify-content: center;
-    width: $ancho;
-    grid-area: "sumampa1";
-
-}
-}
-
-.canchaeldorado { 
-  .eldorado1 {
-   margin: 5%;
-   height: 1%;
-   padding: 1%;
-   display: grid;
-   block-size: 500px;
-   justify-content: center;
-   width: $ancho;
-   grid-area: "eldorado1";
-}
-}
 
 .contacto {
     margin: 1%;
     height: 1%;
     padding: auto;
     text-align: center;
+    color: $color-titulos;
 }
 .formulario {
     margin: 3%;
@@ -293,14 +231,28 @@
 }
 
 
-.carousel {
-    margin: 5%;
-    height: 500px;
-    width: $ancho *0.85;  
-    
+.row {
+    .col {
+        .carrusel {
+            margin: 10%;
+        }
+        
+    }
+}
+.mapa {
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+    display: flexbox;
+    text-align: center;
+
 }
 
 
+#menu, #menu-check {
+    display: none
+}
 
 
 

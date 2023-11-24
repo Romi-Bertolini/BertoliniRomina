@@ -435,4 +435,89 @@ p::selection{
    
    }*/
    
+  /* @media (min-width:300px) and (max-width: 411px)
+   
+   {
+    #menu-check:not(:checked) ~ nav {
+        display: none;
+    }
+    #menu-check:checked ~ nav {
+        display: block;
+    }
+    #menu {
+        display: block;
+        color: $color-titulos;
+        font-size: medium;
+        font-weight: bold;
+        border: 3px solid $color-titulos;
+        border-radius: 0.3em;
+        position: absolute;
+        background-color: aliceblue;
+        right: 1em;
+        top: 1em;
+        z-index: 9999;
+
+    }
+    #menu:hover {
+        color: aliceblue;
+        background-color: $color-titulos;
+    }
+       .lista1 { 
+           width: 100%;
+           margin: 1%;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           position: relative;
+           font-size: small;
+
+           &:before {
+            display: none;
+           }
+   
+       }
+   
+       .p, .Bienvenidos, {
+            margin: 20%;
+            padding: 10%;
+        
+            
+
+   
+       }
+   
+       .iniciofotos, .canchainicio1 {
+           margin: 30%;
+           display: grid;
+           grid-row: (1, 1fr);
+           width: 100%;
+           overflow-x: scroll;
+   
+      }
+       .productos{
+           display: grid;
+           grid-template-columns: repeat(1, 1fr);
+           width: $ancho;
+           height: $alto;
+       }
+       .eventofotos {
+        margin: 10%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+   
+       }
+       .header, .servicios3 {
+           margin: 90%;
+       }
+       .carrusel {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0%;
+        margin: 0%;
+        
+       }
+    
+   }
+   
        

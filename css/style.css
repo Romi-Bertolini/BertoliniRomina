@@ -8,65 +8,74 @@
   text-decoration-line: none;
 }
 
-.body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.cuerpo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(151, 238, 140);
 }
 
 .header {
-  margin: 25%;
-  padding: auto;
-  height: 2%;
-  width: 70%;
-  background-color: #69eb63;
-}
-
-.h1 {
-  color: #15850f;
-  margin: 1%;
-  padding: 0%;
-  font-size: 250%;
-  text-align: center;
-  width: 100%;
-  background-color: #69eb63;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-}
-.h1 .inicio {
-  margin: 2px;
-  padding: 1px;
-  border: 1px solid;
-  border-radius: 5px;
-  height: 5px;
-}
-.h1 .inicio .logo {
   margin: 0%;
   padding: 0%;
-  display: inline-block;
   height: auto;
-}
-
-.nav .navegacion {
+  width: 100%;
   background-color: #69eb63;
-  margin: 5%;
+  display: flexbox;
 }
 
-.lista1 {
-  color: #010f01;
-  margin: 3%;
-  padding: 1%;
-  height: 5%;
-  align-items: center;
-  text-decoration: none;
-  font-weight: 600;
+.container {
+  display: flexbox;
+  color: #15850f;
+  margin: 0%;
+  padding: 0%;
+  font-size: 300%;
+  width: 100%;
+  height: 10%;
+  border: none;
+  text-align: center;
 }
-.lista1:hover {
+.container .cont {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+.container .cont .row .inicio {
+  margin: 10%;
+  padding: 0%;
+  height: 10%;
+  text-align: center;
+  width: 100%;
+  display: flexbox;
+}
+.container .cont .row .logo {
+  margin: 5%;
+  padding: 0%;
+  grid-row: auto;
+  height: 150px;
+  width: auto;
+  display: flexbox;
+}
+.container .cont .nave {
+  width: 100%;
+  height: 100%;
+  display: flexbox;
+  margin: 0%;
+  padding: 0%;
+}
+.container .cont .nave .lista1 {
+  color: #15850f;
+  margin: 0%;
+  padding: 0%;
+  height: auto;
+  text-decoration: none;
+  font-size: large;
+  display: flexbox;
+  text-align: center;
+}
+.container .cont .nave .lista1:hover {
   background-color: #69eb63;
   border-radius: 10px;
 }
-.lista1:before {
+.container .cont .nave .lista1:before {
   content: "⚽";
 }
 
@@ -76,9 +85,51 @@
   padding: 0%;
   height: auto;
   text-align: center;
+  display: flexbox;
 }
 
-.lista3 {
+#textobienvenida {
+  width: 100%;
+  height: 100%;
+  display: flexbox;
+  margin: 0%;
+  padding: 0%;
+}
+#textobienvenida .card-body {
+  background-color: rgb(151, 238, 140);
+  position: relative;
+}
+#textobienvenida .card-body .card-title {
+  background-color: rgb(151, 238, 140);
+}
+#textobienvenida .tarjetas {
+  margin: 15%;
+  overflow: auto;
+}
+#textobienvenida .paginas {
+  color: #15850f;
+  margin: 5%;
+  padding: 0%;
+  height: 0%;
+  font-size: 500px;
+  text-align: center;
+  width: 100%;
+  display: flexbox;
+}
+#textobienvenida .bienvenidos {
+  margin: 0%;
+  height: auto;
+  padding: 0%;
+  display: flexbox;
+  width: 90%;
+  text-align: center;
+  font-size: larger;
+}
+#textobienvenida .iniciofotos {
+  width: 80%;
+  margin: 10%;
+}
+#textobienvenida .lista3 {
   color: #15850f;
   margin: 1%;
   padding: 0%;
@@ -92,99 +143,24 @@
   border: none;
   font-weight: 600;
 }
-.lista3:hover {
+#textobienvenida .lista3:hover {
   background-color: #69eb63;
   border-radius: 10px;
 }
-
-.h2 {
-  color: #15850f;
-  margin: 2%;
-  padding: 1%;
-  height: 0%;
-  font-size: 200%;
-  text-align: center;
-  width: 100%;
-}
-.h2 .salon {
-  margin: 5%;
-  padding: 1%;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.iniciofotos {
+#textobienvenida .servicios {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 300px);
-  gap: 1rem;
+  grid-template-areas: "servicios1 servicios2 eldorado1";
+  grid-template-columns: 30% 30% 40%;
   margin: 1%;
   height: auto;
   width: 100%;
 }
-.iniciofotos .canchainicio1 {
-  margin: 1%;
-  height: 150%;
-  padding: 1%;
-  width: 95%;
-}
-
-.productos {
-  margin: 3%;
-  height: 5%;
-  padding: 3%;
-  color: #15850f;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  width: 100%;
+#textobienvenida .servicios3 {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  grid-template-rows: repeat(3, 300px);
-  gap: 1rem;
-}
-.productos .pro {
-  font-weight: 200px;
-  height: 35px;
-  width: 25%;
-  background-color: #69eb63;
-  margin: 15%;
-  border: 1px solid;
-  border-radius: 5px;
-  text-align: center;
-  align-items: center;
-  justify-content: space-around;
-  column-gap: 15px;
-  opacity: 150;
-  font-weight: 600;
-}
-.productos .profoto {
-  margin: 5%;
-  height: 600%;
-  padding: 10%;
-  width: 200%;
-}
-.productos .boton {
-  background-color: transparent;
+  margin-bottom: 1%;
   width: 100%;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  border-radius: 5px;
-}
-.productos .comprar {
-  background-color: #69eb63;
-  color: antiquewhite;
-}
-.productos .comprar:hover {
-  opacity: 20;
-  background-color: #15850f;
+  height: auto;
+  padding: 0%;
 }
 
 p {
@@ -199,61 +175,12 @@ p::selection {
   background-color: #69eb63;
 }
 
-.servicios {
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  grid-template-rows: repeat(3, 300px);
-  gap: 1rem;
-  margin: 1%;
-  height: auto;
-  width: 100%;
-}
-.servicios .servicios1 {
-  margin: 5%;
-  width: 100%;
-  height: 100%;
-  padding: auto;
-  text-align: center;
-  font-size: medium;
-  grid-area: "servicios1";
-}
-.servicios .servicios2 {
-  margin: 5%;
-  width: 100%;
-  height: 100%;
-  padding: auto;
-  text-align: center;
-  font-size: medium;
-  grid-area: "servicios2";
-}
-
-.canchasumampa .sumampa1 {
-  margin: 5%;
-  height: 1%;
-  padding: 1%;
-  display: grid;
-  block-size: 500px;
-  justify-content: center;
-  width: 100%;
-  grid-area: "sumampa1";
-}
-
-.canchaeldorado .eldorado1 {
-  margin: 5%;
-  height: 1%;
-  padding: 1%;
-  display: grid;
-  block-size: 500px;
-  justify-content: center;
-  width: 100%;
-  grid-area: "eldorado1";
-}
-
 .contacto {
   margin: 1%;
   height: 1%;
   padding: auto;
   text-align: center;
+  color: #15850f;
 }
 
 .formulario {
@@ -267,79 +194,175 @@ p::selection {
   background-color: #69eb63;
 }
 
-.carousel {
-  margin: 5%;
-  height: 500px;
-  width: 85%;
+.row .col .carrusel {
+  margin: 10%;
 }
 
-@media (min-width: 851px) and (max-width: 1100px) {
-  .lista1 {
+.mapa {
+  width: 100%;
+  height: auto;
+  margin: 0%;
+  padding: 0%;
+  display: flexbox;
+  text-align: center;
+}
+
+#menu, #menu-check {
+  display: none;
+}
+
+@media (min-width: 776px) and (max-width: 1000px) {
+  .container .cont .row .inicio {
+    width: 100%;
+    height: 10%;
+  }
+  .nave .lista1 {
     height: 65%;
-    width: 50%;
-    margin: 1%;
-  }
-  .productos {
-    grid-template-columns: repeat(2, 2fr);
-    font-size: small;
-  }
-  .iniciofotos, .canchainicio1 {
-    margin: 5%;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-  }
-  .eventofotos {
-    margin: 10%;
-  }
-}
-@media (min-width: 450px) and (max-width: 850px) {
-  .lista1 {
-    width: 100%;
-    margin: 1%;
-  }
-  .p, .Bienvenidos {
-    margin: 20%;
-    padding: 10%;
-    padding: 5%;
-  }
-  .productos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    width: 40%;
+    margin: 0%;
     font-size: small;
   }
 }
-@media (min-width: 300px) and (max-width: 499px) {
-  .lista1 {
-    width: 100%;
+.textobienvenida .iniciofotos {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.textobienvenida .bienvenidos {
+  display: flexbox;
+  width: 90%;
+  height: auto;
+  margin: 0%;
+  padding: auto;
+}
+.textobienvenida .servicios {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.row .col .carrusel {
+  margin-top: 1%;
+}
+
+.mapa {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  overflow: auto;
+  display: flexbox;
+  text-align: center;
+}
+
+@media (min-width: 412px) and (max-width: 775px) {
+  #menu-check:not(:checked) ~ nav {
+    display: none;
+  }
+  #menu-check:checked ~ nav {
+    display: block;
+  }
+  #menu {
+    display: block;
+    color: #15850f;
+    font-size: medium;
+    font-weight: bold;
+    border: 3px solid #15850f;
+    border-radius: 0.3em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 9999;
+  }
+  #menu:hover {
+    color: aliceblue;
+    background-color: #15850f;
+  }
+  #menu-cerrar {
+    display: none;
+  }
+  #menu-check:checked ~ label #menu-abrir {
+    display: none;
+  }
+  #menu-check:checked ~ label #menu-cerrar {
+    display: block;
+  }
+  .container {
+    height: 10%;
+    width: 60%;
+    display: flexbox;
+    justify-content: flex-start;
+  }
+  .container .cont .row .inicio {
+    font-size: 30px;
+  }
+  .container .cont .row .logo {
+    display: none;
+  }
+  .container .cont .nave {
+    width: 25%;
+    height: 10%;
     margin: 1%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+    top: 0%;
+    right: 0%;
+    padding-top: 1em;
+    padding-right: 2em;
+    position: absolute;
   }
-  .p, .Bienvenidos {
-    margin: 20%;
-    padding: 10%;
+  .container .cont .nave .lista1 {
+    display: block;
+    top: 0%;
+    right: 0%;
+    padding-top: 1em;
+    padding-right: 2em;
+    font-size: medium;
+    color: aliceblue;
+    background-color: green;
+    opacity: 0.8;
+    font-weight: 400;
   }
-  .iniciofotos, .canchainicio1 {
-    margin: 30%;
-    display: grid;
-    grid-row: 1, 1fr;
-    width: 100%;
-    overflow-x: scroll;
+  .container .cont .nave .lista1:before {
+    display: none;
   }
-  .productos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .eventofotos {
-    margin: 10%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .header, .servicios3 {
-    margin: 20%;
-  }
+}
+#textobienvenida .paginas {
+  margin: 0%;
+  padding: 0%;
+  font-size: 30px;
+}
+#textobienvenida .bienvenidos {
+  margin: 0%;
+  padding: 0%;
+  display: flexbox;
+  flex-direction: column;
+  font-size: 50px;
+}
+#textobienvenida .iniciofotos {
+  margin-top: 25%;
+}
+#textobienvenida .servicios {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+#textobienvenida .servicios .servicios3 {
+  margin: 0%;
+  height: auto;
+  width: 90%;
+  display: flexbox;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.row .col .carrusel {
+  margin-top: 35%;
+}
+
+.mapa {
+  display: block;
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
 }
 
 /*# sourceMappingURL=style.css.map */

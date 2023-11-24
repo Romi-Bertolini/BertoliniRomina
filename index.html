@@ -15,47 +15,83 @@
 </head>
 
 <body>
+ <div class="cuerpo">
+   <header id="top" class="titulo">
 
- <header id="top" class="titulo">
-
-  <!--logo de fut bar--> 
-<nav class="navegacion">
-  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-    
-  <h1 class="inicio">BIENVENIDOS A FUT BAR<a href="/index.html"> 
-        <img class="logo" src="./img/logo.png" alt="Logo de Fut Bar">
-        
-      </a></h1>
-    </nav>
-    
-                 <!--menu de navegacion-->
-    <nav>
-      <a class="lista1" href="./page/contacto.html#contacto"> Ir al Contacto</a>
-      <a class="lista1" href="./page/productos.html#productos">Ir a Productos</a>
-      <a class="lista1" href="./page/futbar-eldorado.html#futbar-eldorado">Ir a Futbar Eldorado</a>
-      <a class="lista1" href="./page/futbar-sumampa.html#futbar-sumampa">Ir a Futbar Sumampa </a>
-      <a class="lista1" href="./page/eventos.html#eventos">Ir a eventos</a>
+   <!--logo de fut bar--> 
+   <nav class="container">
+    <div class="cont">
+    <div class="row">
+     <div class="col-lg-7 col-md-9 col-sm-12"> <h1 class="inicio">BIENVENIDOS A FUT BAR<a href="/index.html"> </a></h1></div>
       
-   </nav>
+      <div class="col-lg-3 col-md-3 col-sm-12"><img class="logo" src="./img/logo.png" alt="Logo de Fut Bar"> <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon"> </div>
+      </div>
+    
+   
+    <!--menu de navegacion-->
+   <nav>
+    <div class="nave">
+      <input type="checkbox" id="menu-check">
+      <label id="menu" for="menu-check">
+        <span id="menu-abrir">&#9776</span>
+        <span id="menu-cerrar">x</span>
+      </label>
+      <nav>
+       <a class="lista1" href="./page/contacto.html#contacto">Contacto</a>
+       <a class="lista1" href="./page/eventos.html#eventos">Eventos</a>
+       <a class="lista1" href="./page/futbar-sumampa.html#futbar-sumampa">Sumampa</a>
+       <a class="lista1" href="./page/futbar-eldorado.html#futbar-eldorado">Eldorado</a>
+       <a class="lista1" href="./page/productos.html#productos">Productos</a>
+      </nav>
+    </div>
+  </nav>
+</div>
+</nav>
+  
+  
+   </header>  
 
                   <!--texto de bienvenida-->
       
-  </header>  
-    <h2>Canchas de futbol sintetico</h2>
 
-     <p class="Bienvenidos">Bienvenidos a nuestra página web, en nuestro sitio vas a poder conocer nuestros principales servicios, teléfonos e información detallada sobre nosotros, nuestras canchas están ubicadas en la ciudad de Sumampa-Santiago del estero y Eldorado-Misiones, siendo referentes en el rubro.</p>
-                  
-  
-                  <!--imagen de cancha de futbol-->
-<div class="iniciofotos">
-    <img class="canchainicio1" src="./img/cancha 1.jpg" alt="Cancha de Futbol">
-    <img class="canchainicio1" src="./img/nosotros.jpg" alt="Nosotros inaugurando en la cancha de futbol">
+   <div id="textobienvenida">
+        <h2 class="paginas">Canchas de futbol sintetico</h2>
+         <div class="bienvenidos">
+          <p>Bienvenidos a nuestra página web, en nuestro sitio vas a poder conocer nuestros principales servicios, teléfonos e información detallada sobre nosotros, nuestras canchas están ubicadas en la ciudad de Sumampa-Santiago del estero y Eldorado-Misiones, siendo referentes en el rubro.</p> 
+        </div>
+
+
+       <div class="iniciofotos">
+       <div id="carouselCrossfade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/canchainiciomodificada.jpg" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/nosotros.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/inicio.jpg" class="d-block w-100" alt="Slide 3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselCrossfade" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselCrossfade" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+
+ <a href="#top">Arriba</a>
+
+
+ <script src="./js/popper.js"></script>
+ <script src="./js/bootstrap.js"></script>
+
 </div>
-<a href="#top">Arriba</a>
-
-<script src="./js/popper.js"></script>
-<script src="./js/bootstrap.js"></script>
-
-
+</div>
 </body>
 </html>
