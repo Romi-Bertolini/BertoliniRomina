@@ -10,7 +10,7 @@
 
 .cuerpo {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: rgb(151, 238, 140);
+  background-image: linear-gradient(90deg, rgb(92, 207, 92), rgb(163, 247, 151));
 }
 
 .header {
@@ -38,7 +38,7 @@
   margin: 0%;
   padding: 0%;
 }
-.container .cont .row .inicio {
+.container .cont .row .animate__animated {
   margin: 10%;
   padding: 0%;
   height: 10%;
@@ -53,6 +53,9 @@
   height: 150px;
   width: auto;
   display: flexbox;
+}
+.container .cont .row .logo:hover {
+  transform: scale(1.1);
 }
 .container .cont .nave {
   width: 100%;
@@ -72,7 +75,7 @@
   text-align: center;
 }
 .container .cont .nave .lista1:hover {
-  background-color: #69eb63;
+  background-color: rgb(159, 247, 159);
   border-radius: 10px;
 }
 .container .cont .nave .lista1:before {
@@ -95,6 +98,12 @@
   margin: 0%;
   padding: 0%;
 }
+#textobienvenida .card-group .tarpro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0%;
+  position: relative;
+}
 #textobienvenida .card-body {
   background-color: rgb(151, 238, 140);
   position: relative;
@@ -102,19 +111,25 @@
 #textobienvenida .card-body .card-title {
   background-color: rgb(151, 238, 140);
 }
-#textobienvenida .tarjetas {
-  margin: 15%;
+#textobienvenida #tarjetas {
+  margin: 1%;
   overflow: auto;
+  transition: all 0.5s;
+  position: relative;
+}
+#textobienvenida #tarjetas .card-body:hover {
+  transform: scale(1.05);
 }
 #textobienvenida .paginas {
   color: #15850f;
-  margin: 5%;
+  margin: 1%;
   padding: 0%;
   height: 0%;
   font-size: 500px;
   text-align: center;
   width: 100%;
   display: flexbox;
+  overflow: auto;
 }
 #textobienvenida .bienvenidos {
   margin: 0%;
@@ -162,6 +177,13 @@
   height: auto;
   padding: 0%;
 }
+#textobienvenida .card-group .card {
+  margin-top: 10%;
+  transition: 1s;
+}
+#textobienvenida .card-group .card:hover {
+  transform: scale(1.1);
+}
 
 p {
   margin: 1%;
@@ -201,10 +223,14 @@ p::selection {
 .mapa {
   width: 100%;
   height: auto;
-  margin: 0%;
   padding: 0%;
   display: flexbox;
   text-align: center;
+}
+
+.mapa:hover {
+  transform: scale(1.05);
+  margin-top: 5%;
 }
 
 #menu, #menu-check {
@@ -263,18 +289,20 @@ p::selection {
   #menu {
     display: block;
     color: #15850f;
-    font-size: medium;
+    font-size: small;
     font-weight: bold;
     border: 3px solid #15850f;
     border-radius: 0.3em;
     position: absolute;
     right: 1em;
     top: 1em;
-    z-index: 9999;
+    z-index: 99999;
+    transition: transform 1s;
   }
   #menu:hover {
     color: aliceblue;
     background-color: #15850f;
+    transform: skew(10deg);
   }
   #menu-cerrar {
     display: none;
@@ -291,7 +319,7 @@ p::selection {
     display: flexbox;
     justify-content: flex-start;
   }
-  .container .cont .row .inicio {
+  .container .cont .row .animate__animated {
     font-size: 30px;
   }
   .container .cont .row .logo {
@@ -319,15 +347,27 @@ p::selection {
     background-color: green;
     opacity: 0.8;
     font-weight: 400;
+    transition: transform 1s;
+  }
+  .container .cont .nave .lista1:hover {
+    transform: scale(1.05);
+    background-color: rgb(109, 201, 109) 9;
+    color: #15850f;
   }
   .container .cont .nave .lista1:before {
     display: none;
   }
 }
+#textobienvenida .card-group .tarpro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5%;
+}
 #textobienvenida .paginas {
-  margin: 0%;
+  margin: 10%;
   padding: 0%;
   font-size: 30px;
+  overflow: auto;
 }
 #textobienvenida .bienvenidos {
   margin: 0%;

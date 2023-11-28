@@ -5,7 +5,7 @@
 
 .cuerpo {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(151, 238, 140);
+    background-image: linear-gradient(90deg, rgb(92, 207, 92), rgb(163, 247, 151));
 }
 
 .header {
@@ -34,7 +34,7 @@
         padding: 0%;
 
         .row {
-            .inicio {
+            .animate__animated {
                 margin: 10%;
                 padding: 0%;   
                 height: 10%;
@@ -49,6 +49,9 @@
                height: 150px;
                width: auto;
                display: flexbox;
+                  }
+                  .logo:hover {
+                    transform: scale(1.1);
                   }
               } 
               .nave {
@@ -67,15 +70,18 @@
                     font-size: large;
                     display: flexbox;
                     text-align: center;
+                    
                    
                 &:hover{
-                        background-color: map-get($map: $color, $key: color-fondo);
+                        background-color: rgb(159, 247, 159);
                         border-radius: 10px;
+                        
                     }
                 &:before{
                         content: "⚽";
                     }
                 }
+                
             }   
     }
    
@@ -101,28 +107,45 @@
     margin: 0%;
     padding: 0%;
 
+   .card-group{
+         .tarpro{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0%;
+            position: relative;
+          
+         }
+   }
   .card-body {
         background-color:  rgb(151, 238, 140);
         position: relative;
+       
 
         .card-title {
             background-color:rgb(151, 238, 140);
         }
     }
-    .tarjetas {
-        margin: 15%;
+    #tarjetas {
+        margin: 1%;
         overflow: auto;
+        transition: all .5s;
+        position: relative;
+
+        .card-body:hover {
+            transform: scale(1.05);
+        }
     }
 
     .paginas {
         color:  map-get($map: $color, $key: color-titulos);
-        margin: 5%;
+        margin: 1%;
         padding: 0%;
         height: 0%;
         font-size: 500px;
         text-align: center;
         width: $ancho;
         display: flexbox;
+        overflow: auto;
     } 
     
     .bienvenidos {
@@ -182,16 +205,28 @@
            padding: 0%;
        }
        
-      }
-   
-    
-    .card-group{
+
+       .card-group{
+       
         .card {
+            margin-top: 10%;
+            transition: 1s;
+            
+        }
+        .card:hover {
+            transform: scale(1.1);
+           
        
            
     
         }
     } 
+    
+
+      }
+   
+    
+    
      p {
         margin: 1%;
         height: 1px;
@@ -242,13 +277,16 @@
 .mapa {
     width: 100%;
     height: auto;
-    margin: 0%;
     padding: 0%;
     display: flexbox;
     text-align: center;
+    
 
 }
-
+.mapa:hover {
+    transform: scale(1.05);
+    margin-top: 5%;
+}
 
 #menu, #menu-check {
     display: none

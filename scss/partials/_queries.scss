@@ -79,19 +79,21 @@
     #menu {
         display: block;
         color: $color-titulos;
-        font-size: medium;
+        font-size: small;
         font-weight: bold;
         border: 3px solid $color-titulos;
         border-radius: 0.3em;
         position: absolute;
         right: 1em;
         top: 1em;
-        z-index: 9999;
+        z-index: 99999;
+        transition: transform 1s;
           
     }
     #menu:hover {
         color: aliceblue;
         background-color: $color-titulos;
+        transform: skew(10deg);
     }
     #menu-cerrar {
         display: none;
@@ -111,7 +113,7 @@
     
          .cont {
             .row {
-                .inicio{
+                .animate__animated {
                     font-size: 30px;
                 }
                 .logo {
@@ -143,6 +145,13 @@
                 background-color: green;
                 opacity: 0.8;
                 font-weight: 400;
+                transition: transform 1s;
+                &:hover {
+                    transform: scale(1.05);
+                    background-color: rgb(109, 201, 109)9;
+                    color: $color-titulos;
+                }
+
         
                 &:before {
                     display: none;
@@ -161,11 +170,17 @@
    
       
     #textobienvenida {
-                  
+        .card-group{
+            .tarpro{
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               margin: 5%;
+            }  }        
         .paginas {
-            margin: 0%;
+            margin: 10%;
             padding: 0%;
             font-size: 30px;
+            overflow: auto;
            }
 
         .bienvenidos {
@@ -193,7 +208,7 @@
            }
        } 
         
-    } 
+    }  
        .row {
         .col {
             .carrusel {
@@ -208,7 +223,9 @@
         height: 100vh;
         margin: 0%;
         padding: 0%;
-    
-    }
+       
+       
    
-  
+    }
+        
+   
