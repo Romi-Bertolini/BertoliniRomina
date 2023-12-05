@@ -174,17 +174,22 @@
             .tarpro{
                display: grid;
                grid-template-columns: repeat(3, 1fr);
-               margin: 5%;
-            }  }        
+               margin-top: 35%;
+               position: relative;
+            }  }   
+        #tarjetas {
+            margin-top: 35%;
+        }      
+        
         .paginas {
-            margin: 10%;
+            margin: 3%;
             padding: 0%;
             font-size: 30px;
             overflow: auto;
            }
 
         .bienvenidos {
-                margin: 0%;
+                margin-bottom: 20%;
                 padding: 0%;
                 display: flexbox;
                 flex-direction: column;
@@ -192,14 +197,14 @@
        }
 
        .iniciofotos {
-        margin-top: 25%;
+        margin-top: 2%;
        }
        .servicios {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
        
         .servicios3 {
-            margin: 0%;
+            margin-bottom: 20%;
             height: auto;
             width: 90%;
             display: flexbox;

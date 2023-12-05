@@ -39,7 +39,8 @@
   padding: 0%;
 }
 .container .cont .row .animate__animated {
-  margin: 10%;
+  margin: 0%;
+  margin-top: 10%;
   padding: 0%;
   height: 10%;
   text-align: center;
@@ -47,7 +48,8 @@
   display: flexbox;
 }
 .container .cont .row .logo {
-  margin: 5%;
+  margin: 0%;
+  margin-top: 5%;
   padding: 0%;
   grid-row: auto;
   height: 150px;
@@ -73,6 +75,8 @@
   font-size: large;
   display: flexbox;
   text-align: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 .container .cont .nave .lista1:hover {
   background-color: rgb(159, 247, 159);
@@ -93,15 +97,16 @@
 
 #textobienvenida {
   width: 100%;
-  height: 100%;
+  height: 5%;
   display: flexbox;
   margin: 0%;
   padding: 0%;
+  justify-content: center;
 }
 #textobienvenida .card-group .tarpro {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0%;
+  margin-top: 0%;
   position: relative;
 }
 #textobienvenida .card-body {
@@ -116,23 +121,22 @@
   overflow: auto;
   transition: all 0.5s;
   position: relative;
+  margin-top: 0%;
 }
 #textobienvenida #tarjetas .card-body:hover {
   transform: scale(1.05);
 }
 #textobienvenida .paginas {
   color: #15850f;
-  margin: 1%;
-  padding: 0%;
-  height: 0%;
-  font-size: 500px;
+  margin: 0%;
+  height: auto;
   text-align: center;
   width: 100%;
   display: flexbox;
   overflow: auto;
 }
 #textobienvenida .bienvenidos {
-  margin: 0%;
+  margin-top: 0%;
   height: auto;
   padding: 0%;
   display: flexbox;
@@ -142,7 +146,7 @@
 }
 #textobienvenida .iniciofotos {
   width: 80%;
-  margin: 10%;
+  margin-left: 10%;
 }
 #textobienvenida .lista3 {
   color: #15850f;
@@ -218,6 +222,7 @@ p::selection {
 
 .row .col .carrusel {
   margin: 10%;
+  margin-top: 0%;
 }
 
 .mapa {
@@ -361,30 +366,34 @@ p::selection {
 #textobienvenida .card-group .tarpro {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 5%;
+  margin-top: 35%;
+  position: relative;
+}
+#textobienvenida #tarjetas {
+  margin-top: 35%;
 }
 #textobienvenida .paginas {
-  margin: 10%;
+  margin: 3%;
   padding: 0%;
   font-size: 30px;
   overflow: auto;
 }
 #textobienvenida .bienvenidos {
-  margin: 0%;
+  margin-bottom: 20%;
   padding: 0%;
   display: flexbox;
   flex-direction: column;
   font-size: 50px;
 }
 #textobienvenida .iniciofotos {
-  margin-top: 25%;
+  margin-top: 2%;
 }
 #textobienvenida .servicios {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
 }
 #textobienvenida .servicios .servicios3 {
-  margin: 0%;
+  margin-bottom: 20%;
   height: auto;
   width: 90%;
   display: flexbox;
