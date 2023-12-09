@@ -1,18 +1,439 @@
-/* Error: Expected expression.
- *    ,
- * 12 |             margin-top: 5git%;
- *    |                              ^
- *    '
- *   scss\partials\_queries.scss 12:30  @import
- *   scss\style.scss 327:9              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a    \2577 \a 12 \2502              margin-top: 5git%;\d\a    \2502                               ^\a    \2575 \a   scss\\partials\\_queries.scss 12:30  @import\a   scss\\style.scss 327:9              root stylesheet";
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration-line: none;
 }
+
+.cuerpo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-image: linear-gradient(90deg, rgb(83, 218, 83), rgb(163, 247, 151));
+}
+
+.header {
+  margin: 0%;
+  padding: 0%;
+  height: auto;
+  width: 100%;
+  background-color: #69eb63;
+  display: flexbox;
+}
+
+.container {
+  display: flexbox;
+  color: #15850f;
+  margin: 0%;
+  padding: 0%;
+  font-size: 300%;
+  width: 100%;
+  height: 10%;
+  border: none;
+  text-align: center;
+}
+.container .cont {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+.container .cont .row .animate__animated {
+  margin: 0%;
+  margin-top: 10%;
+  padding: 0%;
+  height: 10%;
+  text-align: center;
+  width: 100%;
+  display: flexbox;
+}
+.container .cont .row .logo {
+  margin: 0%;
+  margin-top: 5%;
+  padding: 0%;
+  grid-row: auto;
+  height: 150px;
+  width: auto;
+  display: flexbox;
+}
+.container .cont .row .logo:hover {
+  transform: scale(1.1);
+}
+.container .cont .nave {
+  width: 100%;
+  height: 100%;
+  display: flexbox;
+  margin: 0%;
+  padding: 0%;
+}
+.container .cont .nave .lista1 {
+  color: #15850f;
+  margin: 0%;
+  padding: 0%;
+  height: auto;
+  text-decoration: none;
+  font-size: large;
+  display: flexbox;
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+.container .cont .nave .lista1:hover {
+  background-color: rgb(159, 247, 159);
+  border-radius: 10px;
+}
+.container .cont .nave .lista1:before {
+  content: "⚽";
+}
+
+.lista2 {
+  color: #15850f;
+  margin: 0%;
+  padding: 0%;
+  height: auto;
+  text-align: center;
+  display: flexbox;
+}
+
+#textobienvenida {
+  width: 100%;
+  height: 5%;
+  margin: 0%;
+  padding: 0%;
+  justify-content: center;
+}
+#textobienvenida .card-group .tarpro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0%;
+  position: relative;
+}
+#textobienvenida .card-body {
+  background-color: rgb(151, 238, 140);
+  position: relative;
+}
+#textobienvenida .card-body .card-title {
+  background-color: rgb(151, 238, 140);
+}
+#textobienvenida #tarjetas {
+  margin: 1%;
+  overflow: auto;
+  transition: all 1s;
+  position: relative;
+  margin-top: 0%;
+}
+#textobienvenida #tarjetas .card-body:hover {
+  transform: scale(1.05);
+}
+#textobienvenida .paginas {
+  color: #15850f;
+  margin: 0%;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  display: flexbox;
+  overflow: auto;
+}
+#textobienvenida .bienvenidos {
+  margin: 0%;
+  margin-top: 0%;
+  height: auto;
+  padding: 0%;
+  display: flexbox;
+  width: 90%;
+  text-align: center;
+  font-size: larger;
+}
+#textobienvenida .iniciofotos {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 0%;
+}
+#textobienvenida .lista3 {
+  color: #15850f;
+  margin: 1%;
+  padding: 0%;
+  text-align: center;
+  background-color: transparent;
+  width: 100%;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-weight: 600;
+}
+#textobienvenida .lista3:hover {
+  background-color: #69eb63;
+  border-radius: 10px;
+}
+#textobienvenida .servicios {
+  display: grid;
+  grid-template-areas: "servicios1 servicios2 eldorado1";
+  grid-template-columns: 30% 30% 40%;
+  margin: 1%;
+  height: auto;
+  width: 100%;
+}
+#textobienvenida .servicios3 {
+  display: grid;
+  margin-bottom: 1%;
+  width: 100%;
+  height: auto;
+  padding: 0%;
+}
+#textobienvenida .card-group .card {
+  margin-top: 1%;
+  transition: 1s;
+}
+#textobienvenida .card-group .card:hover {
+  transform: scale(1.1);
+}
+
+p {
+  margin: 1%;
+  height: 1px;
+  padding: 0%;
+  font-size: medium;
+  display: inline-flex;
+  font-size: medium;
+}
+p::selection {
+  background-color: #69eb63;
+}
+
+.contacto {
+  margin: 1%;
+  height: 1%;
+  padding: auto;
+  text-align: center;
+  color: #15850f;
+}
+
+.formulario {
+  margin: 3%;
+  padding: 2%;
+  height: 2%;
+  background-color: #69eb63;
+  border-radius: 5%;
+}
+.formulario input:valid, .formulario .formu textarea:valid {
+  background-color: #69eb63;
+}
+
+.row .col .carrusel {
+  margin: 10%;
+  margin-top: 0%;
+}
+
+.mapa {
+  width: 100%;
+  height: auto;
+  padding: 0%;
+  display: flexbox;
+  text-align: center;
+}
+
+.mapa:hover {
+  transform: scale(1.05);
+  margin-top: 5%;
+}
+
+#menu, #menu-check {
+  display: none;
+}
+
+.container .row .col-lg-4 {
+  margin-top: 5%;
+}
+.container .row .col-lg-4 .footer .lista4 {
+  color: #15850f;
+  font-size: medium;
+}
+
+@media (min-width: 1001px) {
+  .row .col .carrusel {
+    margin-top: 5%;
+  }
+  #textobienvenida .iniciofotos {
+    margin-top: 5%;
+  }
+  #textobienvenida .card-group .tarpro {
+    margin-top: 0%;
+  }
+  #textobienvenida #tarjetas {
+    margin-top: 0%;
+  }
+  .row .col .carrusel {
+    margin-top: 5%;
+  }
+}
+@media (min-width: 776px) and (max-width: 1000px) {
+  .container .cont .row .inicio {
+    width: 100%;
+    height: 10%;
+  }
+  .nave .lista1 {
+    height: 65%;
+    width: 40%;
+    margin: 0%;
+    font-size: small;
+  }
+  #textobienvenida .iniciofotos {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 10%;
+  }
+  #textobienvenida .bienvenidos {
+    display: flexbox;
+    width: 90%;
+    height: auto;
+    margin: 0%;
+    padding: auto;
+  }
+  #textobienvenida .servicios {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .row .col .carrusel {
+    margin-top: 10%;
+  }
+  .mapa {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow: auto;
+    display: flexbox;
+    text-align: center;
+  }
+}
+@media (min-width: 412px) and (max-width: 775px) {
+  #menu-check:not(:checked) ~ nav {
+    display: none;
+  }
+  #menu-check:checked ~ nav {
+    display: block;
+  }
+  #menu {
+    display: block;
+    color: #15850f;
+    font-size: small;
+    font-weight: bold;
+    border: 3px solid #15850f;
+    border-radius: 0.3em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 99999;
+    transition: transform 1s;
+  }
+  #menu:hover {
+    color: aliceblue;
+    background-color: #15850f;
+    transform: skew(10deg);
+  }
+  #menu-cerrar {
+    display: none;
+  }
+  #menu-check:checked ~ label #menu-abrir {
+    display: none;
+  }
+  #menu-check:checked ~ label #menu-cerrar {
+    display: block;
+  }
+  .container {
+    height: 10%;
+    width: 60%;
+    display: flexbox;
+    justify-content: flex-start;
+  }
+  .container .cont .row .animate__animated {
+    font-size: 30px;
+  }
+  .container .cont .row .logo {
+    display: none;
+  }
+  .container .cont .nave {
+    width: 25%;
+    height: 10%;
+    margin: 1%;
+    display: flex;
+    top: 0%;
+    right: 0%;
+    padding-top: 1em;
+    padding-right: 2em;
+    position: absolute;
+  }
+  .container .cont .nave .lista1 {
+    display: block;
+    top: 0%;
+    right: 0%;
+    padding-top: 1em;
+    padding-right: 2em;
+    font-size: medium;
+    color: aliceblue;
+    background-color: green;
+    opacity: 0.8;
+    font-weight: 400;
+    transition: transform 1s;
+  }
+  .container .cont .nave .lista1:hover {
+    transform: scale(1.05);
+    background-color: rgb(109, 201, 109) 9;
+    color: #15850f;
+  }
+  .container .cont .nave .lista1:before {
+    display: none;
+  }
+  #textobienvenida .card-group .tarpro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 35%;
+    position: relative;
+  }
+  #textobienvenida #tarjetas {
+    margin-top: 35%;
+  }
+  #textobienvenida .paginas {
+    margin: 3%;
+    padding: 0%;
+    font-size: 30px;
+    overflow: auto;
+  }
+  #textobienvenida .bienvenidos {
+    margin-bottom: 20%;
+    padding: 0%;
+    display: flexbox;
+    flex-direction: column;
+    font-size: 50px;
+  }
+  #textobienvenida .iniciofotos {
+    margin-top: 15%;
+  }
+  #textobienvenida .servicios {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #textobienvenida .servicios .servicios3 {
+    margin-bottom: 20%;
+    height: auto;
+    width: 90%;
+    display: flexbox;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .row .col .carrusel {
+    margin-top: 35%;
+  }
+  .mapa {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
