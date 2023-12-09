@@ -5,8 +5,8 @@
 
 .cuerpo {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: linear-gradient(90deg, rgb(92, 207, 92), rgb(163, 247, 151));
-}
+    background-image: linear-gradient(90deg, rgb(83, 218, 83), rgb(163, 247, 151));
+    }
 
 .header {
     margin: 0%;
@@ -109,7 +109,6 @@
 #textobienvenida {
     width: $ancho;
     height: 5%;
-    display: flexbox;
     margin: 0%;
     padding: 0%;
     justify-content: center;
@@ -118,7 +117,7 @@
          .tarpro{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            margin-top: 0%;
+            margin: 0%;
             position: relative;
           
          }
@@ -135,7 +134,7 @@
     #tarjetas {
         margin: 1%;
         overflow: auto;
-        transition: all .5s;
+        transition: all 1s;
         position: relative;
         margin-top: 0%;
 
@@ -157,6 +156,7 @@
      
     
     .bienvenidos {
+        margin: 0%;
         margin-top: 0%;
         height: auto;
         padding: 0%;
@@ -169,6 +169,7 @@
      .iniciofotos {
          width: 80%;
          margin-left: 10%;
+         margin-top: 0%;
         
          
         
@@ -218,7 +219,7 @@
        .card-group{
        
         .card {
-            margin-top: 10%;
+            margin-top: 1%;
             transition: 1s;
             
         }
@@ -302,6 +303,22 @@
     display: none
 }
 
+.container {
+    .row {
+        .col-lg-4 {
+            margin-top: 5%;
+            
+            
+            .footer {
+                .lista4 {
+                    color: $color-titulos;
+                    font-size: medium;
+                    
+                }
+            }
+            }
+        }
+    }
 
 
 

@@ -1,5 +1,38 @@
+@media (min-width:1001px) {
 
-@media (min-width:776px) and (max-width: 1000px){
+    .row {
+        .col {
+            .carrusel {
+               margin-top: 5%;
+               }
+        }
+       }
+       #textobienvenida {
+         .iniciofotos {
+            margin-top: 5git%;
+         }
+        .card-group{
+            .tarpro{
+               margin-top: 0%;
+               
+            }  }   
+    
+        #tarjetas {
+            margin-top: 0%;
+        }      
+        
+        
+    }  
+       .row {
+        .col {
+            .carrusel {
+                margin-top: 5%;
+               }
+        }
+}}
+       
+@media (min-width:776px) and (max-width: 1000px) {
+
 
     .container {
         .cont {
@@ -22,11 +55,12 @@
     } 
    
    
-    }
-    .textobienvenida {
+    
+    #textobienvenida {
         .iniciofotos {
             display: grid;
             grid-template-rows: repeat(3, 1fr);
+            margin-top: 10%;
             
            }
         .bienvenidos {
@@ -46,7 +80,7 @@
    .row {
     .col {
         .carrusel {
-           margin-top: 1%;
+           margin-top: 10%;
            }
     }
    }
@@ -60,7 +94,9 @@
     display: flexbox;
     text-align: center;
 }
+}
 
+   
    
 
 
@@ -166,7 +202,7 @@
   
  
  
-  }  
+   
    
       
     #textobienvenida {
@@ -197,7 +233,7 @@
        }
 
        .iniciofotos {
-        margin-top: 2%;
+        margin-top: 15%;
        }
        .servicios {
         display: grid;
@@ -231,6 +267,6 @@
        
        
    
-    }
+    }} 
         
    
