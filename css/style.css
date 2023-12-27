@@ -308,7 +308,7 @@ p::selection {
     text-align: center;
   }
 }
-@media (min-width: 412px) and (max-width: 775px) {
+@media (min-width: 450px) and (max-width: 775px) {
   #menu-check:not(:checked) ~ nav {
     display: none;
   }
@@ -388,7 +388,7 @@ p::selection {
   }
   #textobienvenida .card-group .tarpro {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 35%;
     position: relative;
   }
@@ -433,6 +433,100 @@ p::selection {
     height: 100vh;
     margin: 0%;
     padding: 0%;
+  }
+}
+@media (min-width: 320px) and (max-width: 449px) {
+  #menu-check:not(:checked) ~ nav {
+    display: none;
+  }
+  #menu-check:checked ~ nav {
+    display: block;
+  }
+  #menu {
+    display: block;
+    color: #15850f;
+    font-size: small;
+    font-weight: bold;
+    border: 3px solid #15850f;
+    border-radius: 0.3em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 99999;
+    transition: transform 1s;
+  }
+  #menu:hover {
+    color: aliceblue;
+    background-color: #15850f;
+    transform: skew(10deg);
+  }
+  #menu-cerrar {
+    display: none;
+  }
+  #menu-check:checked ~ label #menu-abrir {
+    display: none;
+  }
+  #menu-check:checked ~ label #menu-cerrar {
+    display: block;
+  }
+  .container {
+    height: 10%;
+    width: 60%;
+    display: flexbox;
+    justify-content: flex-start;
+  }
+  .container .cont .row .animate__animated {
+    font-size: 30px;
+  }
+  .container .cont .row .logo {
+    display: none;
+  }
+  .container .cont .nave {
+    width: 25%;
+    height: 10%;
+    margin: 1%;
+    display: flex;
+    top: 0%;
+    right: 0%;
+    padding-top: 1em;
+    padding-right: 2em;
+    position: absolute;
+  }
+  .container .cont .nave .lista1 {
+    display: block;
+    top: 0%;
+    right: 0%;
+    padding-top: 1em;
+    padding-right: 2em;
+    font-size: medium;
+    color: aliceblue;
+    background-color: green;
+    opacity: 0.8;
+    font-weight: 400;
+    transition: transform 1s;
+  }
+  .container .cont .nave .lista1:hover {
+    transform: scale(1.05);
+    background-color: rgb(109, 201, 109) 9;
+    color: #15850f;
+  }
+  .container .cont .nave .lista1:before {
+    display: none;
+  }
+  #textobienvenida .iniciofotos {
+    margin-top: 50%;
+  }
+  #textobienvenida #tarjetas {
+    margin-top: 55%;
+  }
+  #textobienvenida .card-group .tarpro {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 55%;
+    position: relative;
+  }
+  .row .col .carrusel {
+    margin-top: 60%;
   }
 }
 
